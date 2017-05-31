@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 30, 2017, 1:50:07 PM
+    Author     : Nitish
+*/
+
+#sign_in_container{
+		position: fixed;
+		bottom : 80px;
+		left: 200px;
+		top: 30px;
+		border: solid gray;
+		border-collapse: separate;
+    	padding-top: 60px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+    	padding-left: 20px;	}
+    #Register_container{
+    	position: fixed;
+    	bottom : 80px;
+		left: 700px;
+		top: 30px;
+		padding-top: 60px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+    	padding-left: 20px;	
+		border: solid gray;
+    }
+	#password,#username,#register_username,#register_password{
+		border: groove;
+		width: 350px;
+		height: 30px;
+		padding-left: 12px;
+	}
+	#login,#Register{
+		height: 40px;
+		width: 150px ;
+		background-color: #DB7093;  
+		opacity: 0.7;
+		top: 80px;
+	}
+	#login:hover {
+		box-shadow: 0px 0px 20px #DB7093;
+	}
+	#Register:hover{
+		box-shadow: 0px 0px 20px #DB7093;
+	}
+	input[type=submit]
+	{
+		font-size: 25px;
+		font-weight: bold;
+		font-family: "Times New Roman";
+	}
+
+	::-webkit-input-placeholder {
+  	   opacity: 0.7;
+  	   font-size: 15px!important;
+       -webkit-transition: opacity 0.4s ease-in-out;
+       transition: opacity 0.4s ease-in-out;
+	}
+	:hover::-webkit-input-placeholder{
+		opacity: 1;
+		-webkit-transition:opacity 0.4s ease-in-out;
+		transition: opacity 0.4s ease-in-out;
+	}
+	:focus::-webkit-input-placeholder{
+		opacity: 0;
+		-webkit-transition:opacity 0.8s ease-in-out;
+		transition: opacity 0.9s ease-in-out
+	}
