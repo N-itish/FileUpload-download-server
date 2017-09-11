@@ -34,10 +34,15 @@ public class FileUploadDAOImpl implements FileUploadDAO{
     
     @Override
     public void insert(FileUpload data) {
+        try{
         transaction  = session.beginTransaction();
         session.save(data);
         transaction.commit();
         session.close();                
+        }catch(Exception ex)
+        {
+            transaction.rollback();
+        }
     }
 
     @Override
