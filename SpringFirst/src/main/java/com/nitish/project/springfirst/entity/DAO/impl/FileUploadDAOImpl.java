@@ -38,10 +38,12 @@ public class FileUploadDAOImpl implements FileUploadDAO{
         transaction  = session.beginTransaction();
         session.save(data);
         transaction.commit();
-        session.close();                
-        }catch(Exception ex)
+        }catch(HibernateException ex)
         {
             transaction.rollback();
+        }
+        finally{
+            session.close();                
         }
     }
 
